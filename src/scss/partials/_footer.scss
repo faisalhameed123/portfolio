@@ -1,0 +1,155 @@
+.footC{
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-color: rgb(187, 176, 176);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    &__footContainer1{
+        padding-bottom: 15px;
+        &__line-top{
+            border: 2px solid white;
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 10%;    
+        }
+        &__info-foot{
+            width: 180px;
+            height: 180px;
+            margin-left: 30%;
+            margin-top: 12%;
+            background-color: white;
+            border-radius: 50%;
+            
+            &--p{
+                margin-top: 10%;
+                font-size: 10px;
+            }
+            &--h4{
+                padding-top: 15%;
+            }
+        }
+    }
+    &__footContainer2{ 
+        margin-top: 20%;   
+        &__icons{
+            height: 100px;
+            margin-top: 20px;
+          
+            &--face{
+                width: 10%;
+                margin-top: 20px; 
+                margin-right: 5px; 
+            }
+            &--linked{
+                width: 11.5%;
+                margin-top: 20px; 
+                margin-right: 5px;  
+            }
+            &--twitt{
+                width: 10%;
+                margin-top: 20px;   
+            }
+        }
+        &__copy-right{
+            &--p{
+                font-weight: bold;
+            }
+        }
+    }
+    &__footContainer3{
+        padding-bottom: 15px;
+        &__line-top{
+            border: 2px solid white;
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 10%;
+        }
+        &__info-foot{
+            width: 180px;
+            height: 180px;
+            margin-left: 30%;
+            margin-top: 12%;
+            background-color: white;
+            border-radius: 50%;
+            &--p{
+                margin-top: 10%;
+                font-size: 10px;
+            }
+            &--h4{
+                padding-top: 15%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .footC{
+        &__footContainer1{
+            padding-bottom: 0px;
+            &__line-top{
+                margin-left: 20%;
+                margin-top: 12%;    
+            }
+            &__info-foot{
+                width: 120px;
+                height: 120px;
+                margin-left: 13%;     
+                &--p{
+                    margin-top: 10%;
+                    font-size: 7px;
+                }
+                &--h4{
+                    font-size: 14px;
+                    padding-top: 18%;
+                }
+            }
+        }
+        &__footContainer2{ 
+            margin-top: 20%;   
+            &__icons{
+                height: 100px;
+                margin-top: 20px;
+              
+                &--face{
+                    width: 14%;
+                    margin-top: 25px; 
+                    margin-right: 5px; 
+                }
+                &--linked{
+                    width: 16%;
+                    margin-top: 25px; 
+                    margin-right: 5px;  
+                }
+                &--twitt{
+                    width: 14%;
+                    margin-top: 25px;   
+                }
+            }
+            &__copy-right{
+                &--p{
+                    font-size: 8px;
+                }
+            }
+        }
+        &__footContainer3{
+            padding-bottom: 5px;
+            &__line-top{
+                margin-top: 12%;
+            }
+            &__info-foot{
+                width: 120px;
+                height: 120px;
+                margin-left: 13%;
+                &--p{
+                    font-size: 8px;
+                }
+                &--h4{
+                    font-size: 14px;
+                    padding-top: 18%;
+                }
+            }
+        }
+    }
+}
+

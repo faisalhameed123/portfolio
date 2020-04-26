@@ -1,0 +1,144 @@
+.aboutContainer{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -200;
+    background: url('../../images/wood2.jpg') no-repeat;
+    background-size: cover;
+    &__logo{
+        width: 150px;
+        height: 90px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 5px;
+        border-radius: 30%;
+    }
+   &__aboutBack{
+       width: 45%;
+       height: 95%;
+       margin-left: 28%;
+       position: absolute;
+       z-index: -100;
+       left: 0;
+       top: 0;
+   }
+   &__accordCont{ 
+        height: 77%;
+        margin-top:8%;
+        margin-left: 32%;
+        border-color: black;
+        &--cardheader{
+            
+            &__imager{
+                margin-top: 7%;
+                float: left;
+                background-color: white;
+                border-radius: 10px;
+                padding: 5px;
+            }
+            &__heading{
+                margin-top: 13%;
+                width: 90%;
+                font-size: 30px;
+                color: black;
+                background-color: white;
+                padding: 8px;
+                border-radius: 10px;  
+            }
+            &__collapse--cardBody__p{
+                width: 500px;
+                color: white;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1500px){
+    .aboutContainer{
+       &__accordCont{ 
+        height: 80%;
+            &--cardheader{
+                &__imager{
+                width: 30px; 
+                margin-top: 4%;  
+                }
+                &__heading{
+                margin-top: 6%;
+                 font-size: 25px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px){
+    .aboutContainer{
+       &__accordCont{ 
+            &--cardheader{
+                &__collapse--cardBody__p{
+                 width: 380px;  
+                 font-size: 11.5px; 
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1000px){
+    .aboutContainer{
+       &__accordCont{ 
+            &--cardheader{
+                &__heading{
+                 font-size: 20px;
+                }
+                &__collapse--cardBody__p{
+                 width: 260px;  
+                 font-size: 10px; 
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 910px){
+    .aboutContainer{
+        &__accordCont{ 
+            margin-top: 100px;
+            &--cardheader{
+                &__collapse--cardBody__p{
+                    font-size: 10px;
+                    width: 300px;
+                    color: white;
+                }
+            }
+        }
+    }    
+}
+@media only screen and (max-width: 500px){
+    .aboutContainer{
+        &__aboutBack{
+            width: 60%;
+            height: 80%;
+            margin-top: 23%;
+        }
+        &__accordCont{ 
+            margin-top: 160px;
+            border-color: black;
+            &--cardheader{
+                &__imager{
+                    margin-top: 20px;
+                    padding: 5px;
+                    margin-right: 150px;
+                }
+                &__heading{
+                    margin-top: 20px;
+                    font-size: 16px;
+                    width: 130px;
+                    padding: 8px; 
+                }
+                &__collapse--cardBody__p{
+                    font-size: 10px;
+                    width: 250px;
+                    color: white;
+                }
+            }
+        }
+    }    
+}

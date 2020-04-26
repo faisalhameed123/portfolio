@@ -1,0 +1,109 @@
+@import "variables";
+
+.homeCont{
+    position: absolute;
+    top: 0px;
+    width:100%;
+    height: 110%;
+    z-index:-200;
+    background: url('../../images/back.jpg') no-repeat;  
+    background-size: cover;
+    &__logo2{
+        width: 150px;
+        height: 90px;
+        margin-top: 10px;
+        margin-right: 5px;
+        float: right;
+        border-radius: 30%;
+    }
+    &__h1{
+        font-size: 70px;
+        margin-top: 100px;
+        margin-left: 380px;
+        color: whitesmoke;
+        font-family: serif;
+    }
+    &__h2{
+        font-size: 30px;
+        margin-top: 80px;
+        margin-left: 260px;
+        color: $blgrecol;
+    }
+    &__MDBCarousel{
+       width: 700px;
+       margin-bottom: 40px;
+       &__MDBCarouselInner{
+           &--MDBCarouselItem{
+               &__MDBView{
+                   &--Link{
+                        &__img1,&__img2,&__img3,&__img4,&__img5,&__img6{
+                            width: 100%;
+                            border-radius: 5%;   
+                        }
+                   }
+               }
+           }
+       }
+        
+    } 
+}
+@media only screen and (max-width: 1400px){
+    .homeCont{
+       &__h2{
+        // margin-top: 60px;
+       } 
+       &__MDBCarousel{
+        width: 45%;  
+        }  
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .homeCont{
+       &__h2{
+        // margin-top: 60px;
+       } 
+       &__MDBCarousel{
+        width: 55%;  
+        }  
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .homeCont{
+        width:100%;
+        margin: auto; 
+       &__h1{
+        font-size: 50px;
+        margin-left: 35%;
+        margin-top: 25%;
+        }
+       &__h2{
+        margin-left: 35%;
+       } 
+       &__MDBCarousel{
+        width: 90%;
+        padding-bottom: 45px;
+            margin: auto;
+            &__MDBCarouselInner{
+                &--MDBCarouselItem{
+                    &__MDBView{
+                        &--Link{
+                         &__img1,&__img2,&__img3,&__img4,&__img5,&__img6{
+                             width: 107%;
+                             margin-left: -15px;
+                             margin-right:-15px;
+                             border-radius: 5%;   
+                         }
+     
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}
+
+   
+   
